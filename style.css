@@ -1,0 +1,457 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.containerone {
+  background-image: url("./pop-bg.jpg");
+  background-size: 100% 100%;
+  color: white;
+  padding: 40px;
+}
+.main-containerone {
+  display: flex;
+  margin: 0% 20%;
+}
+.container-left {
+  width: 70%;
+}
+.img-container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
+  gap: 20px;
+}
+.img-container i {
+  font-size: 15px;
+  padding: 4px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid white;
+}
+.icon i {
+  font-size: 30px;
+}
+.img-container span {
+  margin-top: 3px;
+  font-size: 13px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0000007e;
+  margin: 0% 25%;
+  opacity: 0.9rem;
+}
+.containertwo {
+  background-image: url("./pop-bg.jpg");
+  background-size: 100% 100%;
+  color: white;
+  padding: 40px;
+}
+.wel-container {
+  background-color: dimgray;
+  margin: 0% 15%;
+  padding: 40px;
+}
+.container i {
+  float: right;
+  font-size: 20px;
+  position: relative;
+  top: 0px;
+  bottom: -10px;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+.des-container1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.containerthree {
+  background-image: url("./pop-bg.jpg");
+  background-size: 100% 100%;
+  color: white;
+
+  padding: 40px;
+}
+.bgcolor-container {
+  background-color: dimgray;
+  padding: 40px;
+  margin: 0% 15%;
+}
+.bg-teamcontainer {
+  display: flex;
+}
+.img-containerthree {
+  margin-right: 20%;
+}
+.containerfour {
+  background-image: url("./pop-bg.jpg");
+  background-size: 100% 100%;
+  color: white;
+}
+.carousel-item img {
+  width: 30%;
+  width: calc(100% / 6);
+}
+.carousel-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  margin: 0% 20%;
+  margin-top: 10px;
+}
+.containerfour {
+  background-image: url("./pop-bg.jpg");
+  background-size: 100% 100%;
+  color: white;
+}
+.about-carousel {
+  background-color: dimgray;
+  margin: 0% 15%;
+  padding: 40px;
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  background-color: #000000 !important;
+}
+.carousel-indicators .active {
+  background-color: lightblue !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black;
+  background-size: 20px 20px;
+
+  filter: invert(1) !important;
+  /* background-image: none !important; */
+}
+.carousel-control-prev {
+  left: -35px;
+}
+
+.carousel-control-next {
+  right: -35px;
+}
+.carousel-indicators {
+  position: relative;
+  top: 90px;
+  left: 35%;
+  z-index: 10;
+}
+
+.carousel-indicators > li {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+  list-style-type: none;
+  /* background-color: lightseagreen !important; */
+}
+.carousel-indicators > li:active {
+  background-color: lightseagreen !important;
+}
+.containerfive {
+  background-image: url("./pop-bg.jpg");
+  background-size: 100% 100%;
+  color: white;
+  padding: 40px;
+  margin-top: 10px;
+}
+input,
+textarea,
+button {
+  background-color: lightslategray;
+  border: none;
+  padding: 20px;
+}
+.form-container {
+  padding: 40px;
+}
+.contact-container {
+  background-color: dimgray;
+  margin: 0% 15%;
+  padding: 40px;
+}
+.containerfive button {
+  background-color: blue;
+}
+/* Mobile Devices (max-width: 576px) */
+@media (min-width: 150px) and (max-width: 576px) {
+  .main-containerone {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .carousel-indicators {
+    position: relative;
+    top: 350px;
+    left: 35%;
+    z-index: 10;
+  }
+  .container-left {
+    width: 45%;
+  }
+  .img-container {
+    width: 40%;
+  }
+  .container-left p {
+    font-size: 0.7rem;
+  }
+  .container-left img {
+    width: 200px;
+  }
+  .icon {
+    font-size: 0.2rem;
+  }
+  .containerthree {
+    display: flex;
+    flex-direction: column;
+  }
+  .bg-teamcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .des-container1 div,
+  .des-container2 div {
+    width: 45%;
+    font-size: 0.8rem;
+  }
+  .des-container1 img,
+  .des-container2 img {
+    width: 70px;
+    /* height: auto; */
+  }
+  .bg-teamcontainer button {
+    margin: 10px 0px;
+  }
+  .img-containerthree img {
+    width: 150px;
+    margin: 10px 0px;
+  }
+  .carousel-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .form-container form {
+    /* padding: 0% 10%; */
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container p {
+    font-size: 0.9rem;
+  }
+  .form-container h1 {
+    font-size: 1rem;
+  }
+  .contact-container {
+    background-color: dimgray;
+    margin: 0% 15%;
+    padding: 40px;
+  }
+  input [title="email"] {
+    margin-top: 10px;
+  }
+  input,
+  textarea,
+  button {
+    width: 30vw;
+    margin: 5px !important;
+    font-size: 0.5rem;
+    width: 30vw;
+    padding: 60px 10px;
+  }
+}
+@media (min-width: 321px) and (max-width: 376px) {
+  .carousel-indicators {
+    position: absolute;
+    top: 435px !important;
+    left: 35%;
+    z-index: 10;
+  }
+}
+@media (min-width: 377px) and (max-width: 426px) {
+  .carousel-indicators {
+    top: 525px !important;
+  }
+} /* Tablet Devices (max-width: 768px) */ /* Tablet Devices (max-width: 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .main-containerone {
+    /* flex-direction: column; */
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .container-left img {
+    width: 300px;
+  }
+  .img-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .img-container span {
+    font-size: 0.6rem;
+  }
+  .about-carousel,
+  .contact-container,
+  .container-left {
+    margin: 0% 5%;
+  }
+  footer {
+    margin-top: 30px;
+  }
+  .img-containerthree img {
+    width: 200px;
+    margin: 10px 0px;
+  }
+  .des-containerthree button {
+    width: 150px;
+  }
+  .carousel-container {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .des-container1 div,
+  .des-container2 div {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .des-container1 img,
+  .des-container2 img {
+    width: 100px;
+    /* height: auto; */
+  }
+  .carousel-item img {
+    /* width: calc(100%1); */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    position: relative;
+    top: -2px;
+  }
+
+  .carousel-indicators {
+    top: 65px !important;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 50vw;
+    margin: 5px !important;
+  }
+
+  .wel-container,
+  .bgcolor-container {
+    margin: 0 5%;
+    padding: 30px;
+  }
+}
+
+/* Large Devices (max-width: 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .main-containerone {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5%;
+  }
+
+  .img-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .carousel-container {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .carousel-item img {
+    width: 100%;
+  }
+  /* .wel-container img {
+    width: 300px;
+  } */
+  .des-container1 div,
+  .des-container2 div {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .des-container1 img,
+  .des-container2 img {
+    width: 200px;
+    /* height: auto; */
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .carousel-indicators {
+    top: 250px !important;
+  }
+  input,
+  textarea,
+  button {
+    width: 50vw;
+    margin: 5px !important;
+    font-size: 0.5rem;
+    padding: 60px 10px;
+  }
+}
+
+/* Extra Large Devices (min-width: 1200px) */
+/* Extra Large Devices (min-width: 993px) and (max-width: 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .main-containerone {
+    margin: 0 10%;
+  }
+  .container-left img {
+    width: 300px;
+  }
+  .wel-container img {
+    width: 270px;
+  }
+  .carousel-container {
+    gap: 25px;
+  }
+  .carousel-indicators {
+    top: 70px !important;
+  }
+  footer {
+    padding: 25px;
+    font-size: 16px;
+  }
+}
